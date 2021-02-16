@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KENYAN RESTAURANTS</title>
+		<!-- External Stylesheets -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<style type="map { position: absolute;}"></style>
+
+	</head>
+
+	<body>
+		<header>
+			<h3 style="color:black;float: center"><u>KENYAN RESTAURANTS AND THEIR CUISINES.</u></h3>
+		</header>
+		<div id ="map" style="width: 1000px; height: 500px">
+			<!-- Add the Leaflet JavaScript library -->
+			<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+			<script>var map = L.map('map').setView([0.776913, 37.919447], 6);
+
+			L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=48q75muHRgW2xeDZPOr5', {
+				attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors; 	CONTRIBUTORS: <i> ENC222-0407/2017</i>; AUTHOR: <i>AYOYI ANNE IYVONNE</i></a>',
+			}).addTo(map);
+			var marker = new
+
+			L.marker([-4.05, 39.666667]).addTo(map).bindPopup("<b>Bake Shop</b><br>cuisine: Bakery.</br><br>Street: Pork Avenue.</br><br>Date: 1393804800000</br><br>Date:  1378857600000</br><br>Date: 1358985600000</br><br>Date: 1322006400000</br><br>Date: 1299715200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-4.174444, 39.460278]).addTo(map).bindPopup("<b>Wendy'S</b><br>cuisine: Hamburgers.</br><br>Street: Flat Avenue.</br><br>Date: 1419897600000</br><br>Date: 1404172800000</br><br>Date: 1367280000000</br><br>Date: 1336435200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-3.633333, 39.85]).addTo(map).bindPopup("<b>Dj Restaurant</b><br>cuisine: Irish.</br><br>Street: West 57 Street.</br><br>Date: 1409961600000</br><br>Date: 1374451200000</br><br>Date: 1343692800000</br><br>Date: 1325116800000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.5, 40.033333]).addTo(map).bindPopup("<b>Riviera Caterer</b><br>cuisine: American.</br><br>Street: Stillwell Avenue.</br><br>Date: 1402358400000</br><br>Date: 1370390400000</br><br>Date: 1334275200000</br><br>Date: 1318377600000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-2.269444, 40.902222]).addTo(map).bindPopup("<b>Tov Kosher Kitchen</b><br>cuisine: Jewish/Kosher.</br><br>Street: 63 Street.</br><br>Date: 1416787200000</br><br>Date: 1358380800000</br><br>Date: 1343865600000</br><br>Date: 1323907200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-3.504722, 38.377778]).addTo(map).bindPopup("<b>Brunos On The Boulevard</b><br>cuisine: American.</br><br>Street: 63 Road.</br><br>Date: 1416009600000</br><br>Date: 1398988800000</br><br>Date: 1362182400000</br><br>Date: 1328832000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.456944, 39.658333]).addTo(map).bindPopup("<b>Kosher Island</b><br>cuisine: Jewish/Kosher.</br><br>Street: Astonia.</br><br>Date: 1412553600000</br><br>Date: 1400544000000</br><br>Date: 1365033600000</br><br>Date: 1327363200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([1.75, 40.05]).addTo(map).bindPopup("<b>Wilken'S Fine Food</b><br>cuisine: Delicatessen.</br><br>Street: Victory.</br><br>Date: 1401321600000</br><br>Date: 1389657600000</br><br>Date: 1375488000000</br><br>Date: 1342569600000</br><br>Date: 1331251200000</br><br>Date: 1331251200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([3.916667, 41.833333]).addTo(map).bindPopup("<b>Regina Caterers</b><br>cuisine: American.</br><br>Street: 11 Avenue.</br><br>Date: 1405641600000</br><br>Date: 1375142400000</br><br>Date: 1360713600000</br><br>Date: 1345075200000</br><br>Date: 1313539200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([2.333333, 37.983333]).addTo(map).bindPopup("<b>Taste The Tropics Ice Cream</b><br>cuisine: Ice Cream, Gelato, Yogurt, Ices.</br><br>Street: Nostrand Avenue.</br><br>Date: 1405296000000</br><br>Date: 1373414400000</br><br>Date: 1341964800000</br><br>Date: 1329955200000</br> ").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.35, 37.583333]).addTo(map).bindPopup("<b>Wild Asia</b><br>cuisine: American.</br><br>Street: Southern Blues.</br><br>Date: 1401235200000</br><br>Date: 1371600000000</br><br>Date: 1339718400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.05, 37.65]).addTo(map).bindPopup("<b>C & C Catering Service</b><br>cuisine: American.</br><br>Street: 18 Avenue.</br><br>Date: 1397606400000</br><br>Date: 1366675200000</br><br>Date:1335225600000</br><br>Date:1323993600000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.333333, 37.65]).addTo(map).bindPopup("<b>May May Kitchen</b><br>cuisine: Chinese.</br><br>Street:Sutter Avenue.</br><br>Date: 1410825600000</br><br>Date: 1377648000000</br><br>Date: 1364860800000</br><br>Date: 1344988800000</br><br>Date: 1332892800000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.533333, 37.45]).addTo(map).bindPopup("<b>1 East 66Th Street Kitchen</b><br>cuisine: American.</br><br>Street: East 66 Street.</br><br>Date: 1399420800000</br><br>Date: 1367539200000</br><br>Date: 1335744000000</br><br>Date: 1324944000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.366667, 38.016667]).addTo(map).bindPopup("<b>Seuda Foods</b><br>cuisine: Jewish/Kosher.</br><br>Street: Kings Highway.</br><br>Date: 1415577600000</br><br>Date: 1381363200000</br><br>Date: 1349308800000</br><br>Date: 1337558400000</br><br>Date: 1325203200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.516667, 37.266667]).addTo(map).bindPopup("<b>Carvel Ice Cream</b><br>cuisine: Ice Cream, Gelato, Yogurt, Ices.</br><br>Street: Church Avenue.</br><br>Date: 1414454400000</br><br>Date: 1379462400000</br><br>Date: 1348099200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.783333, 37.633333]).addTo(map).bindPopup("<b>Carvel Ice Cream</b><br>cuisine: Ice Cream, Gelato, Yogurt, Ices.</br><br>Street: Hillside Avenue.</br><br>Date: 1391990400000</br><br>Date: 1357084800000</br><br>Date: 1326067200000</br><br>Date: 1320624000000</br><br>Date: 1311206400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.45, 36.633333]).addTo(map).bindPopup("<b>Nordic Delicacies</b><br>cuisine: Delicatessen.</br><br>Street: 3 Avenue.</br><br>Date: 1408579200000</br><br>Date: 1393977600000</br><br>Date: 1357776000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.416667, 36.95]).addTo(map).bindPopup("<b>Glorious Food</b><br>cuisine: American.</br><br>Street: East 174 Street.</br><br>Date: 1409616000000</br><br>Date: 1387411200000</br><br>Date: 1369699200000</br><br>Date: 1354838400000</br><br>Date: 1332979200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.5, 37.283333]).addTo(map).bindPopup("<b>The Movable Feast</b><br>cuisine: American.</br><br>Street: 1 Park West.</br><br>Date: 1416355200000</br><br>Date: 1384387200000</br><br>Date: 1354665600000</br><br>Date: 1337212800000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.716667, 37.15]).addTo(map).bindPopup("<b>Sal'S Deli</b><br>cuisine: Delicatessen.</br><br>Street: 20 Avenue.</br><br>Date: 1408147200000</br><br>Date: 1377561600000</br><br>Date: 1348099200000</br><br>Date: 1317254400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.166667, 36.816667]).addTo(map).bindPopup("<b>Bully'S Deli</b><br>cuisine: Delicatessen.</br><br>Street: Broadway.</br><br>Date: 1390262400000</br><br>Date: 1357257600000</br><br>Date: 1339027200000</br><br>Date: 1326758400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([3.116667, 35.6]).addTo(map).bindPopup("<b>Steve Chu'S Deli & Grocery</b><br>cuisine: Delicatessen.</br><br>Street: 10 Street.</br><br>Date: 1395187200000</br><br>Date: 1363132800000</br><br>Date: 1332806400000</br><br>Date: 1301961600000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([1.233333, 35.116667]).addTo(map).bindPopup("<b>Harriet'S Kitchen</b><br>cuisine: Chicken.</br><br>Street: Ams Avenue.</br><br>Date: 1410739200000</br><br>Date: 1393891200000</br><br>Date: 1374105600000</br><br>Date: 1357689600000</br><br>Date: 1334016000000</br><br>Date: 1321315200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([1.1, 36.7]).addTo(map).bindPopup("<b>P & S Deli Grocery</b><br>cuisine: American.</br><br>Street: Colomus Avenue.</br><br>Date: 1410480000000</br><br>Date: 1377648000000</br><br>Date: 1364169600000</br><br>Date: 1329177600000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.516667, 35.283333]).addTo(map).bindPopup("<b>Angelika Film Center</b><br>cuisine: American.</br><br>Street: West 4 Street.</br><br>Date: 1396483200000</br><br>Date: 1365120000000</br><br>Date: 1332288000000</br><br>Date: 1303862400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([1.016667, 35.0]).addTo(map).bindPopup("<b>White Castle</b><br>cuisine: Hamburgers.</br><br>Street: Myrtle Avenue.</br><br>Date: 1395100800000</br><br>Date: 1363564800000</br><br>Date: 1349827200000</br><br>Date: 1316649600000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.673056, 35.508333]).addTo(map).bindPopup("<b>Ho Mei Restaurant</b><br>cuisine: Chinese.</br><br>Street: 37 Avenue.</br><br>Date: 1398038400000</br><br>Date: 1384214400000</br><br>Date: 1370304000000</br><br>Date: 1352851200000</br><br>Date: 1349913600000</br><br>Date: 1337817600000</br><br>Date: 1323302400000</br><br>Date: 1311120000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.333333, 35.166667]).addTo(map).bindPopup("<b>The Country Cafe</b><br>cuisine: Turkish.</br><br>Street: Wall Street.</br><br>Date: 1411689600000</br><br>Date: 1379462400000</br><br>Date: 1348185600000</br><br>Date: 1336521600000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.5, 35.75]).addTo(map).bindPopup("<b>Shashemene Int'L Restaura</b><br>cuisine: Caribbean.</br><br>Street: East 56 Street.</br><br>Date: 1399939200000</br><br>Date: 1367971200000</br><br>Date: 1348272000000</br><br>Date: 1307318400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.016667, 37.066667]).addTo(map).bindPopup("<b>Downtown Deli</b><br>cuisine: American.</br><br>Street: Church Street.</br><br>Date: 1405641600000</br><br>Date: 1393372800000</br><br>Date: 1377475200000</br><br>Date: 1359676800000</br><br>Date: 1326758400000</br><br>Date: 1318896000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.3, 36.066667]).addTo(map).bindPopup("<b>Carvel Ice Cream</b><br>cuisine: Ice Cream, Gelato, Yogurt, Ices.</br><br>Street: East 233 Street.</br><br>Date: 1391990400000</br><br>Date: 1357084800000</br><br>Date: 1326067200000</br><br>Date: 1320624000000</br><br>Date: 1311206400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.0833337, 35.866667]).addTo(map).bindPopup("<b>Dunkin' Donuts</b><br>cuisine: Donuts.</br><br>Street: Court Street.</br><br>Date: 1419897600000</br><br>Date: 1389744000000</br><br>Date: 1357603200000</br><br>Date: 1326931200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.85, 36.783333]).addTo(map).bindPopup("<b>Mejlander & Mulgannon</b><br>cuisine: American.</br><br>Street: 5 Avenue.</br><br>Date: 1417651200000</br><br>Date: 1382572800000</br><br>Date: 1366243200000</br><br>Date: 1333584000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.366667, 35.3]).addTo(map).bindPopup("<b>Olive'S</b><br>cuisine: Bakery.</br><br>Street:Prince Street.</br><br>Date: 1413504000000</br><br>Date: 1379462400000</br><br>Date: 1367280000000</br><br>Date: 1334880000000</br><br>Date: 1324252800000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.783333, 35.35]).addTo(map).bindPopup("<b>Happy Garden</b><br>cuisine: Chinese.</br><br>Street: 238 Avenue.</br><br>Date: 1388361600000</br><br>Date: 1357603200000</br><br>Date: 1339459200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.283333, 34.75]).addTo(map).bindPopup("<b>Cafe Metro</b><br>cuisine: American.</br><br>Street: 8 Avenue.</br><br>Date: 1402272000000</br><br>Date: 1389312000000</br><br>Date: 1354838400000</br><br>Date: 1323734400000</br><br>Date: 1315526400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.05, 34.725]).addTo(map).bindPopup("<b>Tony'S Deli</b><br>cuisine: Delicatessen.</br><br>Street: Wyckoff.</br><br>Date: 1399507200000</br><br>Date: 1386806400000</br><br>Date: 1371772800000</br><br>Date: 1356307200000</br><br>Date: 1318982400000</br><br>Date: 1308096000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.566667, 34.566667]).addTo(map).bindPopup("<b>Lexler Deli</b><br>cuisine: Sandwiches/Salads/Mixed Buffet.</br><br>Street: Lexington Avenue.</br><br>Date: 1392940800000</br><br>Date: 1379030400000</br><br>Date: 1346112000000</br><br>Date: 1315872000000</br><br>Date: 1304380800000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.453056, 34.125]).addTo(map).bindPopup("<b>Bagels N Buns</b><br>cuisine: Delicatessen.</br><br>Street:Victory.</br><br>Date: 1420761600000</br><br>Date: 1386201600000</br><br>Date: 1371600000000</br><br>Date: 1357603200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([0.066667, 34.283333]).addTo(map).bindPopup("<b>Hot Bagels</b><br>cuisine: Bagels/Pretzels.</br><br>Street: Metropolitan Avenue.</br><br>Date: 1410912000000</br><br>Date: 1389830400000</br><br>Date: 1375833600000</br><br>Date: 1361404800000</br><br>Date: 1340150400000</br><br>Date: 1327968000000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.1, 34.75]).addTo(map).bindPopup("<b>Snack Time Grill</b><br>cuisine: American.</br><br>Street: Lefferts.</br><br>Date: 1393286400000</br><br>Date: 1376438400000</br><br>Date: 1344297600000</br><br>Date: 1332720000000</br><br>Date: 1320364800000</br><br>Date: 1309305600000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.516667, 34.45]).addTo(map).bindPopup("<b>Lorenzo & Maria'S</b><br>cuisine: Continental.</br><br>Street: Third Avenue.</br><br>Date: 1401667200000</br><br>Date: 1388102400000</br><br>Date: 1363564800000</br><br>Date: 1328054400000</br><br>Date: 1309910400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.666667, 34.833333]).addTo(map).bindPopup("<b>Domino'S Pizza</b><br>cuisine: Pizza.</br><br>Street: 3 Avenue.</br><br>Date: 1401753600000</br><br>Date: 1370563200000</br><br>Date: 1340928000000</br><br>Date: 1328486400000</br><br>Date: 1308787200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.683333, 34.766667]).addTo(map).bindPopup("<b>Berkely</b><br>cuisine: American.</br><br>Street:Madison Avenue.</br><br>Date: 1401753600000</br><br>Date: 1370563200000</br><br>Date: 1340928000000</br><br>Date: 1328486400000</br><br>Date: 1308787200000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-0.521, 34.914]).addTo(map).bindPopup("<b>Sonny'S Heros</b><br>cuisine: American.</br><br>Street:East 92 Street.</br><br>Date: 1391558400000</br><br>Date: 1359417600000</br><br>Date: 1323302400000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+
+			L.marker([-1.283333, 36.816667]).addTo(map).bindPopup("<b>Carvel Ice Cream</b><br>cuisine: Ice Cream, Gelato, Yogurt, Ices.</br><br>Street: Hylan.</br><br>Date: 1398297600000</br><br>Date: 1361836800000</br><br>Date: 1328140800000</br>").on('mouseover', function(e) {this.openPopup()}).on('mouseout', function(e) {this.closePopup()});
+							 </script>
+		</div>
+	</body>
+<footer>
+AYOYI ANNE IYVONNE-ENC222-0407/2017
+</footer>
+</html>
